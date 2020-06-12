@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "CLI Project! Worlds Wealthiest People"
-date:       2020-06-12 00:13:52 +0000
+date:       2020-06-11 20:13:53 -0400
 permalink:  cli_project_worlds_wealthiest_people
 ---
 
@@ -16,6 +16,6 @@ Day 4, I have a project that fully runs and works, after watching both of the vi
 
 I was going to submit just that, because I think it still met all the requirements, but I decided to turn in a project help form to see what I could improve so that the user could interact with the project more. 
 
-STAY TUNED! 
+STAY TUNED! Overall, I've put about...maybe 30 hours into this so far. And it has been...pretty fun and rewarding!
 
 https://github.com/DahliaBloomstone/Worlds_Wealthiest_People
