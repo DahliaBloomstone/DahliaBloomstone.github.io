@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Ruby Iterators!"
-date:       2020-06-23 20:36:27 +0000
+date:       2020-06-23 16:36:28 -0400
 permalink:  ruby_iterators
 ---
 
