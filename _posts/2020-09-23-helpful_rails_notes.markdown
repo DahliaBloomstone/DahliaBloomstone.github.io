@@ -145,7 +145,7 @@ art project: has many art schedules, has many art plans through art schedules
 
 
 Working with byebugs:
-byebug 
+**byebug**
 (byebug) artplan
 #<ArtPlan id: 2, goal: "Write Gallery Description", description: "Medium", user_id: 1, created_at: "2020-09-13 19:57:23", updated_at: "2020-09-13 19:57:23">
 (byebug) artplan.art_projects
