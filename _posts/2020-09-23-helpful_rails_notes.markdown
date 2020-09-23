@@ -123,6 +123,7 @@ private
 	**Think of foreign keys**:
 	Columns that refer to the primary key of another table. Comprised of the name of the model you are referencing and id. Accessible through instance methods like ArtPlan.find(@art_plan.art_plan_id) would mean you could find an art plans with that active record query. by their id. Foreign keys correspond to the belongs to, has many, has many through relationships 
 
+Mass assignment: params, every key in the hash has to respond to a writer. 
 
 
 
