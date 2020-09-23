@@ -7,24 +7,20 @@ permalink:  helpful_rails_notes
 
 # This will be a helpful guide in the future when I want to create a new rails app. 
 
-What is rails? A web and MVC framework and a ruby gem! 
+**What is rails?** A web and MVC framework and a ruby gem! 
 
-To start: gem install rails, rails new app-name, cd app-name, rake db:create, and rails s to start the server. To use the console: rails c. 
+**To start:** gem install rails, rails new app-name, cd app-name, rake db:create, and rails s to start the server. To use the console: rails c. 
 
-A review of MVC architecture: Model, View, Controller. 
+A review of **MVC architecture:** Model, View, Controller. 
+*Model *files contain validations, database relationships, callbacks, and custom logic. It is a Ruby class that inherits from ActiveRecord::Base. 
+*Views* directory contains the corresponding view for each page that the user will access. 
+The *Controllers* have methods to manage data flow, using CRUD features (index, new, create, show, edit, update, and destroy). They connect the models, views, and routes. 
 
-Model files contain validations, database relationships, callbacks, and custom logic. It is a Ruby class that inherits from ActiveRecord::Base. 
-
-
-Views directory contains the corresponding view for each page that the user will access. 
-
-The Controllers have methods to manage data flow, using CRUD features (index, new, create, show, edit, update, and destroy). They connect the models, views, and routes. 
-
-HTTP routing reminder: URL entered into the browser which is the HTTP request, request sent to server, router interprets the request, sends the message to the controller mapped to the route, controller communicates with the view, server returns HTTP response with the view page in the browser. 
+**HTTP routing** reminder: URL entered into the browser which is the HTTP request, request sent to server, router interprets the request, sends the message to the controller mapped to the route, controller communicates with the view, server returns HTTP response with the view page in the browser. 
 
 The routes in my app: in config/routes.rb. RESTFUL CONVENTIONS:
 Includes: the HTTP verb (ex: get)
-The path: the path in the URL bar the route will be mapped to (ex: /signup')
+*The path*: the path in the URL bar the route will be mapped to (ex: /signup')
 The controller action: tells the Rails routing system that this route should be passed through the static controllers action. (ex: 'users#new')
 
 root 'sessions#home'
@@ -47,7 +43,7 @@ end
 
 Next, Rails will look to render the view explicitly or implicitly. Explicitly would render the new view page in users. 
 
-Models: a user has many art plans, has many art projects through art plans, and has many art schedules through art projects. art schedules belong to art projects and art plans. art projects have many art schedules and have many art plans through art schedules. art plans belong to user, have many art schedules, and have many art projects. 
+**Models:** a user has many art plans, has many art projects through art plans, and has many art schedules through art projects. art schedules belong to art projects and art plans. art projects have many art schedules and have many art plans through art schedules. art plans belong to user, have many art schedules, and have many art projects. 
 
 I set these up after my migrations. Running rails db:migrate and rails db:seed.
 Remember and stress the importance of seed data for testing! Like this: 
@@ -59,7 +55,7 @@ You test in the rails console by: ArtPlan.all or ArtPlan.first, and should retur
 Example of URL route helper:   redirect_to user_path(@user) 
 HTML friendly paths! 
 
-Next reminder: Rails form_tag, form_for element.  Ex: <%= form_for (@art_plan)  do |f| %>
+Next reminder: **Rails form_tag, form_for element**.  Ex: <%= form_for (@art_plan)  do |f| %>
 It knows we want to submit a form via a POST method, automatically renders the HTML. It allows us to submit form data that the controller can use to create or update the record in the database. Can pass in the route to which the params for the form will be sent, the http method, and the attributes for each field. form_for accepts the instance model as an argument (@art_plan). It also knows the route. Used when it is directly connected to a model!
 
 Create Action: 
@@ -73,7 +69,7 @@ Create Action:
       end
     end 
 		
-What is happening here? It creates a new art schedule and saves it. It redirects you to create the schedule, renders the new page. The save method generates a SQL script that inserts a new record into the database. Each of the ArtSchedule object's attributes are passed into the SQL statement, and the method returns true upon succeessful saving. In the console, you will see the art schedule data like the time you work on it and the type of art work it is. It creates a new ArtSchedule instance, passes in the params from the form, and saves the record. We can access the params hash at any time in the console by doing something like ArtSchedule.last. 
+*What is happening here? *It creates a new art schedule and saves it. It redirects you to create the schedule, renders the new page. The save method generates a SQL script that inserts a new record into the database. Each of the ArtSchedule object's attributes are passed into the SQL statement, and the method returns true upon succeessful saving. In the console, you will see the art schedule data like the time you work on it and the type of art work it is. It creates a new ArtSchedule instance, passes in the params from the form, and saves the record. We can access the params hash at any time in the console by doing something like ArtSchedule.last. 
 
 The resources call in the route file - 
  def set_art_plan
@@ -99,7 +95,7 @@ The resources call in the route file -
 		What's happening here? Taking advantage of Active Record's update method! So we don't have to manually assign each attribute. 
 
 
-Strong Params: security vulnerabilities. Abstracted the strong parameter into its own method: We use permit method so the params hash may have whatever keys are in it. 
+**Strong Params: **security vulnerabilities. Abstracted the strong parameter into its own method: We use permit method so the params hash may have whatever keys are in it. 
 
 private
     def user_params
@@ -107,7 +103,7 @@ private
     end
   end
 	
-	GENERATORS: 
+	**GENERATORS**: 
 	Best practice: 
 	mkdir artapp
 	cd artapp
@@ -124,7 +120,7 @@ private
 	    t.integer "art_project_id"
 			 t.index ["art_plan_id"], name: "index_art_schedules_on_art_plan_id"
 			 
-	Think of foreign keys! Columns that refer to the primary key of another table. Comprised of the name of the model you are referencing and id. Accessible through instance methods like ArtPlan.find(@art_plan.art_plan_id) would mean you could find an art plans with that active record query. by their id. Foreign keys correspond to the belongs to, has many, has many through relationships 
+	**Think of foreign keys**! Columns that refer to the primary key of another table. Comprised of the name of the model you are referencing and id. Accessible through instance methods like ArtPlan.find(@art_plan.art_plan_id) would mean you could find an art plans with that active record query. by their id. Foreign keys correspond to the belongs to, has many, has many through relationships 
 
 
 
