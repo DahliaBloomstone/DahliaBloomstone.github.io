@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Helpful Rails Notes "
-date:       2020-09-23 17:16:32 +0000
+date:       2020-09-23 13:16:33 -0400
 permalink:  helpful_rails_notes
 ---
 
