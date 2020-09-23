@@ -120,7 +120,8 @@ private
 	    t.integer "art_project_id"
 			 t.index ["art_plan_id"], name: "index_art_schedules_on_art_plan_id"
 			 
-	**Think of foreign keys**! Columns that refer to the primary key of another table. Comprised of the name of the model you are referencing and id. Accessible through instance methods like ArtPlan.find(@art_plan.art_plan_id) would mean you could find an art plans with that active record query. by their id. Foreign keys correspond to the belongs to, has many, has many through relationships 
+	**Think of foreign keys**:
+	Columns that refer to the primary key of another table. Comprised of the name of the model you are referencing and id. Accessible through instance methods like ArtPlan.find(@art_plan.art_plan_id) would mean you could find an art plans with that active record query. by their id. Foreign keys correspond to the belongs to, has many, has many through relationships 
 
 
 
