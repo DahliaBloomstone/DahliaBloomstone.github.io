@@ -41,6 +41,7 @@ get '/auth/facebook/callback' => 'sessions#fbcreate'
 end
 end
 
+Resources: Any object that you want users to be able to access via URI and perform CRUD (or some subset thereof) operations on can be thought of as a resource. In the Rails sense, it is generally a database table which is represented by a model, and acted on through a controller.
 Next, Rails will look to render the view explicitly or implicitly. Explicitly would render the new view page in users. 
 
 **Models:** a user has many art plans, has many art projects through art plans, and has many art schedules through art projects. art schedules belong to art projects and art plans. art projects have many art schedules and have many art plans through art schedules. art plans belong to user, have many art schedules, and have many art projects. 
@@ -126,8 +127,6 @@ private
 Mass assignment: params, every key in the hash has to respond to a writer. 
 
 
-
-
 #new instantiates a new ActiveRecord model without saving it to the database, whereas #create immediately attempts to save it, as if you had called #new and then #save.
 
 I attended the weekly study groups to understand errors I couldn't figure out myself. They were the most helpful part of the project! It was so nice to work with other people being an online self paced student. 
@@ -203,4 +202,59 @@ nil
 TO FIX IN THE FUTURE:
 How it looks!
 https://github.com/turbolinks/turbolinks turbolinks might be the issue, I had a problem submitting forms where it wouldn't fully submit until I refreshed the page. 
+
+
+Specifications for the Rails Assessment
+Specs:
+
+** Using Ruby on Rails for the project
+I have used Ruby on Rails for the project. 
+ 
+** Include at least one has_many relationship (x has_many y; e.g. User has_many Recipes)
+
+ Include at least one belongs_to relationship (x belongs_to y; e.g. Post belongs_to User)
+ 
+ Include at least two has_many through relationships (x has_many y through z; e.g. Recipe 
+has_many Items through Ingredients)
+ 
+ Include at least one many-to-many relationship (x has_many y through z, y has_many x through z; e.g. Recipe has_many Items through Ingredients, Item has_many Recipes through Ingredients)
+ The "through" part of the has_many through includes at least one user submittable attribute, that is to say, some attribute other than its foreign keys that can be submitted by the app's user (attribute_name e.g. ingredients.quantity)
+
+Include reasonable validations for simple model objects (list of model objects with validations e.g. User, Recipe, Ingredient, Item)
+
+Include a class level ActiveRecord scope method (model object & class method name and URL to see the working feature e.g. User.most_recipes URL: /users/most_recipes)
+
+Include signup
+ Include login
+ Include logout
+ Include third party signup/login (how e.g. Devise/OmniAuth)
+ Include nested resource show or index (URL e.g. users/2/recipes)
+ Include nested resource "new" form (URL e.g. recipes/1/ingredients/new)
+ Include form display of validation errors (form URL e.g. /recipes/new)
+Confirm:
+
+ The application is pretty DRY
+ Limited logic in controllers
+ Views use helper methods if appropriate
+ Views use partials if appropriate
+ 
+ 
+When Rails renders a view as a response, it does so by combining the view with the current layout, using the rules for finding the current layout that were covered earlier in this guide. Within a layout, you have access to three tools for combining different bits of output to form the overall response:
+
+Asset tags
+yield and content_for
+Partials: With a partial, you can move the code for rendering a particular piece of a response to its own file.
+
+Ex: <%= render "shared/page_title", title: "Your Art Project Planning Resource! Write your goals and project descriptions:" %>
+
+You can also pass local variables into partials, making them even more powerful and flexible. For example, you can use this technique to reduce duplication between new and edit pages, while still keeping a bit of distinct content:
+
+new.html.erb
+
+<h1>New zone</h1>
+<%= render partial: "form", locals: {zone: @zone} %>
+
+<div class="well col-md-8 col-md-offset-2">
+
+
 
