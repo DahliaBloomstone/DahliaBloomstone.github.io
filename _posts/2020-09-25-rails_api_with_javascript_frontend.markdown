@@ -1,6 +1,6 @@
 ---
 layout: post
-title:      "RAILS API WITH JAVASCRIPT FRONTEND!"
+title:      "JAVASCRIPT FRONTEND WITH RAILS API BACKEND"
 date:       2020-09-25 22:40:14 -0400
 permalink:  rails_api_with_javascript_frontend
 ---
@@ -212,6 +212,7 @@ title: "b"
 
 **new** operator creates a new empty object and sets this in the constructor function to point to the empty object. by default it references the global object. but if you call this new operator, or constuctor functions, it will reference a new empty object. 
 
+
 **Example 3:**
 const video = {                 //video object 
 title: 'a', 
@@ -300,10 +301,12 @@ With json, think of sending a web request and returning json that can be shared 
 
 *Select, Create, and Modify DOM nodes: *
 
+
 *Attach listeners to DOM nodes to respond to user interaction:* 
 addEventListener() listens for an event like clicking. 
 
 *Use preventDefault to control form submit behavior: *
+
 
 *Use fetch with 'GET', 'POST', 'PATCH' & 'DELETE' HTTP methods: * 
 fetch() is a function that retreives data. When you think of fetch, think of promise, AJAX, asynchronous Javascript, JSON, event loops. fetch uses an http get request to retrieve content specified by a url. json-server dependency. 
@@ -329,11 +332,26 @@ gooddeedsHTML() {
     return this.gooddeeds.map( gooddeed => gooddeed.render() ).join('')
   }
 
-This function transforms each element in the array. Takes each element and returns the new item. 
+This function transforms each element in the array. Takes each element and returns the new item.  
 
+*Inheritance and constructors* 
+constructor functions create objects.
+extends
+new 
 
+*Modularity or modules* each file is a module. 
+Modularizing an application is moving each class into a seperate file. 
+The objects we define in a module are private by default. 
+**import and export**
 
-
+**Javascript promises**
+a promise represents a value that is unknown now, but may be known in the future. It manages a single async value that can be handled in the future. On the left we are making promises, on the right we are using them. It starts off in a pending state, and we have to define a callback function to resolve the promise. (executor)
+consumer of the promise calls the then method. waiting for the aynch value to be fulfilled. 
+fulfill the promise by calling resolve 
+the catch method handles the error 
+.then( ) 
+.then( )
+they can be chained together 
 
 
 
