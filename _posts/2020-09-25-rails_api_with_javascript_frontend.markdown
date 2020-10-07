@@ -148,3 +148,203 @@ The second argument is the callback function. It's work that will be executed wh
 
 JS will start locally, go up the scope chain. 
 
+
+**Javascript Fundamentals:**
+
+*variables:* We use variables to store data temporarily. We give them names to store them. From ES6, we use most often the let keyword to declare a variable. Variables cannot be reserved keywords like let. Variables should be meaningful. They cannot start with a number, either. We use camelcase. 
+
+Example: let firstName = 'Dahlia';
+console.log(firstName);
+
+*Objects:* {} is an object literal. Objects are collections of key value pairs. We add key value pairs in the object, which we can call properties. We can access these properties via dot notation. Dom nodes are javascript objects that can be manipulated. 
+
+
+*Arrays:* Store lists! Each element has an index. 
+
+*data structures:* An array is a data structure used to represent a list of items. You can perform a number of operations on arrays, like push, pop, shift, spread (...), and join. 
+
+*functions:* In Javascript, functions are objects. functions are first class data in Javascript. Think of abstraction that holds a series of steps under a new name. They determine values. The argument is the actual value supplied by the parameter. Concatenating strings! 
+
+syntax: 
+
+function greet(name) {
+console.log('Hello' + name);
+}
+
+greet('Dahlia'); 
+greet('Alice'); 
+
+
+*hoisting:* Hoisting is how variable and function declarations get raised to the top of the current scope. You declare the variable within the function. 
+
+*scope:* think of variables being accessible! parameters in functions are locally scoped variables. Scope is where something is available. There is global, function, and block scope. Like the name sounds, global scope variables are accessible everywhere. Lexical scoping allows for a variable to be accessible even when defined inside another function. 
+
+*context:*  Execution context is how a JS function runs. It can be acceessed by keyword this.
+
+*this:*  Special keyword! *this* is the object that represents the functions execution context and returns current execution context. It is used inside a function. It represents the object that is executing the current function. It always *returns a reference to the current object*. The value of this is determined by how the function is called. returns *window object* if it is a standalone object.
+
+**Example 1:**
+
+let contextExample = { 
+name: "Dahlia"
+warn: function() {
+console.log(`${this.name} is great!`) }
+}
+contextExample.warn() ==> Dahlia is great!
+
+
+**Example 2:**
+
+const video = {
+title: 'a', 
+play() { 
+console.log(this)
+}
+};
+function Video(title) {
+this.title = title;
+console.log(this); 
+}
+const v = new Video('b');  // {}
+
+==> Video {title: "b"} 
+title: "b" 
+
+**new** operator creates a new empty object and sets this in the constructor function to point to the empty object. by default it references the global object. but if you call this new operator, or constuctor functions, it will reference a new empty object. 
+
+**Example 3:**
+const video = {                 //video object 
+title: 'a', 
+tags: ['a', 'b', 'c'], 
+ showTags() {               //method showTags 
+   this.tags.forEach(function(tag) {     
+	 
+	 //for each method has two parameters including thisArg, will reference that object 
+      
+			console.log(this.title, tag);             //inside callback function 
+     }, this); 
+   }
+}; 
+video.showTags(); 
+==> a a 
+         a b 
+				 a c
+				 
+				 //this references the current object this.title and this.tags 
+
+
+warn gets contextExample as its context. 
+this was set to contextExample. 
+this.name = contextExample.name = "Dahlia"
+
+*bind*  Bind is a method that returns a copy of the function but with the execution context set to the argument that is passed to bind. Bind a function to an object. It will return a new instance of the function it is binded to. **Set the value of THIS permanently.** Based on arg passed in bind method. 
+
+**Example**: 
+
+const person = {
+     name: "Dahlia",
+		 walk() {
+		     console.log(this); 
+		 }
+}; 
+person.walk();
+const walk = person.walk.bind(person); 
+walk(); 
+
+//walk always attached to the person object. Person object on the console. 
+
+==>  {name: "Dahlia", walk: f} 
+
+*closures:*
+
+*ES6 syntax:* camelcase. let, const. 
+
+*let, const:* The value of a constant *const* cannot change. They are block scoped. You cannot reassign a constant. If you don't need to reassign, const should be your first choice. Otherwise, if you need to reassign a variable, use let. 
+Variables declared with the*let* keyword are scoped to the block in which they are defined. 
+
+*arrow functions:* =>
+Arrow functions are cleaner syntax code. Like using return.
+*Arrow functions and this:* they don't rebind the this keyword. It inherits this in the context in which the code is defined. 
+
+**Example**
+const square = function(number) {
+   return number * number; 
+	 }; 
+	 
+	* is the same as: *
+	 
+const square = number => number * number; 
+
+console.log(square(5));  equals 25 in the console.
+
+**Example: **
+
+fetchAndLoadGooddeeds() {
+    this.adapter.getGooddeeds() 
+    .then( gooddeedsJSON => gooddeedsJSON.forEach( gooddeed => this.gooddeeds.push( new Gooddeed(gooddeed) )))
+      .then( this.render.bind(this))
+      .catch(error => console.log(error))
+  }
+	
+	removeDeletedGooddeed(deleteResponse) {
+    this.gooddeeds = this.gooddeeds.filter( gooddeed => gooddeed.id !== deleteResponse.gooddeedId )
+    this.render()
+  }
+	
+*filter*: filter method that takes an object and returns a true or false. iterates over an array, takes the gooddeed object and determines if the object should be returned from the filter method. It's saying filter gooddeeds. 
+
+*Explain how Rails routes a request to a controller and method based on the URL and HTTP verb: *
+
+*Use render json: to render serialized JSON: * 
+With json, think of sending a web request and returning json that can be shared by javascript. 
+
+*Select, Create, and Modify DOM nodes: *
+
+*Attach listeners to DOM nodes to respond to user interaction:* 
+addEventListener() listens for an event like clicking. 
+
+*Use preventDefault to control form submit behavior: *
+
+*Use fetch with 'GET', 'POST', 'PATCH' & 'DELETE' HTTP methods: * 
+fetch() is a function that retreives data. When you think of fetch, think of promise, AJAX, asynchronous Javascript, JSON, event loops. fetch uses an http get request to retrieve content specified by a url. json-server dependency. 
+
+*Create a JavaScript object with ES6 class syntax:* 
+Arrays are objects. You access a javascript object via dot notation. An object can be created via a key, value pair. 
+Ex: 
+const meals = { 
+lunch: 'salad' };
+let hungry = 'lunch';
+meals[hungry];
+==> salad 
+
+*Instantiate JavaScript objects and call methods on them* 
+Calling a javascript object is like running it. You can call a javascript object by using something like document.querySelector(), which returns an html element. 
+
+
+*OOJS*: prototypal inheritance. constructor functions. 
+
+*array.map*: 
+
+gooddeedsHTML() {
+    return this.gooddeeds.map( gooddeed => gooddeed.render() ).join('')
+  }
+
+This function transforms each element in the array. Takes each element and returns the new item. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
