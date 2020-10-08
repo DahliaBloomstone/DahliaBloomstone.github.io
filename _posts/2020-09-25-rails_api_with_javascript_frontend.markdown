@@ -192,6 +192,10 @@ console.log(`${this.name} is great!`) }
 }
 contextExample.warn() ==> Dahlia is great!
 
+warn gets contextExample as its context. 
+this was set to contextExample. 
+this.name = contextExample.name = "Dahlia"
+
 
 **Example 2:**
 
@@ -233,10 +237,6 @@ video.showTags();
 				 
 				 //this references the current object this.title and this.tags 
 
-
-warn gets contextExample as its context. 
-this was set to contextExample. 
-this.name = contextExample.name = "Dahlia"
 
 *bind*  Bind is a method that returns a copy of the function but with the execution context set to the argument that is passed to bind. Bind a function to an object. It will return a new instance of the function it is binded to. **Set the value of THIS permanently.** Based on arg passed in bind method. 
 
