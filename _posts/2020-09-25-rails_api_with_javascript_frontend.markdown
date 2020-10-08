@@ -256,7 +256,7 @@ walk();
 
 ==>  {name: "Dahlia", walk: f} 
 
-*closures:*
+*closures:* A closure is the combination of a function bundled together (enclosed) with references to its surrounding state (the lexical environment). In other words, a closure gives you access to an outer function’s scope from an inner function. In JavaScript, closures are created every time a function is created, at function creation time.
 
 *ES6 syntax:* camelcase. let, const. 
 
@@ -296,19 +296,75 @@ fetchAndLoadGooddeeds() {
 
 *Explain how Rails routes a request to a controller and method based on the URL and HTTP verb: *
 
+The router is the doorman of your application. When an HTTP request arrives from the user’s browser, it needs to know which controller action (method) should be run. Should we display the “new user” webpage? Should we edit an existing user with whatever data got sent along?
+
+The Router is basically just a matching service. It looks at the HTTP verb (GET, POST, PUT, DELETE) and the URL that is being requested and matches it with the appropriate controller action to run. It’s a pretty simple function but an essential one. If it can’t find a route that matches the request, your application will throw an error.
+
+
 *Use render json: to render serialized JSON: * 
 With json, think of sending a web request and returning json that can be shared by javascript. 
 
 *Select, Create, and Modify DOM nodes: *
+DOM modification is the key to creating “live” pages.
+
+To create an element: 
+let div = document.createElement('div');
+
+To remove a node: there’s a method node.remove().
+
+**Summary of Dom modification methods**
+
+Methods to create new nodes:
+
+document.createElement(tag) – creates an element with the given tag,
+document.createTextNode(value) – creates a text node (rarely used),
+elem.cloneNode(deep) – clones the element, if deep==true then with all descendants.
+Insertion and removal:
+
+node.append(...nodes or strings) – insert into node, at the end,
+node.prepend(...nodes or strings) – insert into node, at the beginning,
+node.before(...nodes or strings) –- insert right before node,
+node.after(...nodes or strings) –- insert right after node,
+node.replaceWith(...nodes or strings) –- replace node.
+node.remove() –- remove the node.
+Text strings are inserted “as text”.
+
+There are also “old school” methods:
+
+parent.appendChild(node)
+parent.insertBefore(node, nextSibling)
+parent.removeChild(node)
+parent.replaceChild(newElem, node)
+All these methods return node.
+
+Given some HTML in html, elem.insertAdjacentHTML(where, html) inserts it depending on the value of where:
+
+"beforebegin" – insert html right before elem,
+"afterbegin" – insert html into elem, at the beginning,
+"beforeend" – insert html into elem, at the end,
+"afterend" – insert html right after elem.
+Also there are similar methods, elem.insertAdjacentText and elem.insertAdjacentElement, that insert text strings and elements, but they are rarely used.
+
+To append HTML to the page before it has finished loading:
+
+document.write(html)
+After the page is loaded such a call erases the document. Mostly seen in old scripts.
 
 
 *Attach listeners to DOM nodes to respond to user interaction:* 
 addEventListener() listens for an event like clicking. 
 
-*Use preventDefault to control form submit behavior: *
+*Use preventDefault to control form submit behavior:*
+This is an event method. 
+The preventDefault() method cancels the event if it is cancelable, meaning that the default action that belongs to the event will not occur.
+
+For example, this can be useful when:
+
+Clicking on a "Submit" button, prevent it from submitting a form
+Clicking on a link, prevent the link from following the URL.
 
 
-*Use fetch with 'GET', 'POST', 'PATCH' & 'DELETE' HTTP methods: * 
+*Use fetch with 'GET', 'POST', 'PATCH' & 'DELETE' HTTP methods:* 
 fetch() is a function that retreives data. When you think of fetch, think of promise, AJAX, asynchronous Javascript, JSON, event loops. fetch uses an http get request to retrieve content specified by a url. json-server dependency. 
 
 *Create a JavaScript object with ES6 class syntax:* 
