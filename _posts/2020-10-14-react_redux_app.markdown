@@ -1,7 +1,7 @@
 ---
 layout: post
-title:      "REACT REDUX APP #"
-date:       2020-10-14 23:25:02 +0000
+title:      "REACT REDUX APP - Character creator #"
+date:       2020-10-14 19:25:03 -0400
 permalink:  react_redux_app
 ---
 
