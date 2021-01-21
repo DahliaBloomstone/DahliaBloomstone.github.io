@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Final React: Class vs. Functional Components and more! "
-date:       2021-01-21 00:30:44 +0000
+date:       2021-01-20 19:30:44 -0500
 permalink:  final_react_class_vs_functional_components_and_more
 ---
 
