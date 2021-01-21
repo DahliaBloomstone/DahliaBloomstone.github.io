@@ -6,9 +6,9 @@ permalink:  final_react_class_vs_functional_components_and_more
 ---
 
 
-Functional Components: Used only for display purposes, can access props from function parameter, sort of like static components 
+**Functional Components:** Used only for display purposes, can access props from function parameter, sort of like static components. The syntax is also different, a functional component is a Javascript function that returns JSX. It can be known as a stateless component, whereas Class Components are known as Stateful. These components simply return UI: they accept data, display them and render UI.
 
-For example, in my application, my "Footer" would be a functional component: 
+For example, in my application, my "Footer" would be a functional component: You will notice there is no render method.
 
 ```
 import React from 'react';
@@ -25,7 +25,7 @@ export default Footer;
 ```
 
 
-Class-based Components: Used for handling state and accessing React lifecycle methods, can access props using this.props, will have componentDidMount, smart component, smart enough to maintain its own state (stores data of the component, rerenders whenever the component changes) 
+**Class-based Components:** Used for handling state and accessing React lifecycle methods, can access props using this.props, will have componentDidMount, is a smart component, smart enough to maintain its own state (stores data of the component, rerenders whenever the component changes). It is a Javascript class that extends React.Component which has a render method. This is more complex UI logic.
 
 For example, in my application, my CharacterCard is a class component: 
 
@@ -79,3 +79,14 @@ export default connect(mapStateToProps, {deleteCharacter, createCharacter}, null
 
 
 ```
+
+
+These components also **pass props differently**. Inside a functional component, we pass props as an argument of the function. Inside a class component, you need to use *this* to refer to props.
+
+How about handling state in functional vs. class components? I didn't use this in my application, but we can use something called useState, which is a hook. 
+
+Hooks: functions that let you use React state and lifecycle features from functional components. They do not work inside classes. 
+
+For class components, we handle state thinking about the React.Component constructor, state keys, initial values, and mounting. and the setState function.
+
+Apparently, functional components are taking over and becoming more popular as they are shorter and simpler. 
