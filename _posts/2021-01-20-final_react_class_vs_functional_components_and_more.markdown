@@ -97,7 +97,7 @@ Apparently, functional components are taking over and becoming more popular as t
 
 
 
-****Conditional Rendering:****ability to render different UI based on certain conditions. This will be important when thinking about showing and hiding elements, APIs, toggling, and authentication. Think if else statements!
+****Conditional Rendering:**** ability to render different UI based on certain conditions. This will be important when thinking about showing and hiding elements, APIs, toggling, and authentication. Think if else statements!
 
 We use JS operators like if to create elements that represent the current state and let React update the UI. We can look at the sort method in my application as an example:
 
