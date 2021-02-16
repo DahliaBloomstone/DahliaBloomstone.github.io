@@ -5,6 +5,10 @@ date:       2020-10-14 19:25:03 -0400
 permalink:  react_redux_app
 ---
 
+
+![](https://media4.giphy.com/media/l0HlSJ8EcMwcxaomc/giphy.gif)
+
+
 create github repository
 npx create-react-app character-creator 
 cd into the file 
