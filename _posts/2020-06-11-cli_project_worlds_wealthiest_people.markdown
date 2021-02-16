@@ -5,6 +5,10 @@ date:       2020-06-11 20:13:53 -0400
 permalink:  cli_project_worlds_wealthiest_people
 ---
 
+
+![](file:///Users/dahliabloomstone/Desktop/Screen%20Shot%202021-02-16%20at%202.59.22%20PM.png)
+
+
 This blog post will contain my project notes, my thought process behind the days I was working on the project, and some written enthusiasm for the process.
 
 Project notes:
