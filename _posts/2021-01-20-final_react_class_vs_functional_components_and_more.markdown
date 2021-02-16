@@ -7,6 +7,8 @@ permalink:  final_react_class_vs_functional_components_and_more
 
 --------------------------------------------------------------------------------
 
+![](https://media2.giphy.com/media/LmNwrBhejkK9EFP504/giphy.gif)
+
 
 **Functional Components:** Used only for display purposes, can access props from function parameter, sort of like static components. The syntax is also different, a functional component is a Javascript function that returns JSX. It can be known as a stateless component, whereas Class Components are known as Stateful. These components simply return UI: they accept data, display them and render UI.
 
