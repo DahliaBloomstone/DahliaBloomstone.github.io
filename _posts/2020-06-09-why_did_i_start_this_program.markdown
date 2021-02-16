@@ -6,6 +6,8 @@ permalink:  why_did_i_start_this_program
 ---
 
 
+![](https://media2.giphy.com/media/W0VuY0dTxH9L6vLUJ2/giphy.gif)
+
 My senior year of college I learned about a few artists that used code for their art projects in my Electronic Art class, like Cory Arcangel, Jordan Wolfson, and JODI. The best fine artists make art that people cannot understand how to do themselves. I have used software like blender and cinema 4d to create art narratives, and those skills allowed me to challenge myself and learn how to create through practice and hard work.
 
 I have thought about using coding to create art projects for so long, and now that I am in my first year of graduate school for art, now is the perfect time to learn so I can create the best senior project I can in two years.
