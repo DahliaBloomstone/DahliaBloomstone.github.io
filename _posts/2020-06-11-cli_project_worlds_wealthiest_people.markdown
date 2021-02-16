@@ -6,8 +6,7 @@ permalink:  cli_project_worlds_wealthiest_people
 ---
 
 
-![](file:///Users/dahliabloomstone/Desktop/Screen%20Shot%202021-02-16%20at%202.59.22%20PM.png)
-
+![](https://external-preview.redd.it/Waf3O0FqIFB5OBwWf9a1zGkATkoDWyQ8f5DTlwAgeN4.gif?format=mp4&s=16f0a15a66208fd23ce84796b85df6732141d9b4)
 
 This blog post will contain my project notes, my thought process behind the days I was working on the project, and some written enthusiasm for the process.
 
