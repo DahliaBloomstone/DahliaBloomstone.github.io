@@ -7,9 +7,9 @@ permalink:  code_practice_week_1_javascript_cat_clock
 
 ![](https://user-images.githubusercontent.com/63209579/108010079-14efb080-6fd2-11eb-927c-1ba77dcc4602.png)
 
-****A Cat Clock! Because cats never let you do anything. They are the best.****
+A Cat Clock! Because cats never let you do anything. They are the best.
 
-*But, what is happening in the code?*
+But, what is happening in the code?
 
 First, used setInterval because I needed to call a function every second. 
 
