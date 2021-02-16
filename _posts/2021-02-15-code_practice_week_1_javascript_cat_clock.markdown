@@ -1,9 +1,21 @@
 ---
 layout: post
 title:      "Code Practice Week 1: Javascript Cat Clock "
-date:       2021-02-16 02:13:10 +0000
+date:       2021-02-15 21:13:10 -0500
 permalink:  code_practice_week_1_javascript_cat_clock
 ---
+
+![](https://user-images.githubusercontent.com/63209579/108010079-14efb080-6fd2-11eb-927c-1ba77dcc4602.png)
+
+
+
+
+
+
+
+
+
+
 
 
 ```
