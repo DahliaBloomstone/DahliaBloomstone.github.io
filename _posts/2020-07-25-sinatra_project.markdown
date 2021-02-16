@@ -1,9 +1,13 @@
 ---
 layout: post
 title:      "SINATRA PROJECT"
-date:       2020-07-26 02:35:14 +0000
+date:       2020-07-25 22:35:15 -0400
 permalink:  sinatra_project
 ---
+
+
+
+![](https://media4.giphy.com/media/l1J9v7jLtQmy9kz16/giphy.gif)
 
 For this blog entry, I will go through the steps I did for building my app: Sinatra Good Person Tracker App! It's a silly little app that ended up helping me understand so much. 
 
