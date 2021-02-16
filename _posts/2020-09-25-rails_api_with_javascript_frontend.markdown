@@ -5,6 +5,10 @@ date:       2020-09-25 22:40:14 -0400
 permalink:  rails_api_with_javascript_frontend
 ---
 
+
+![](https://external-preview.redd.it/xLhDR-P8P1WnjfTxaIZJxXNJq5xOlcZwmcwvb3QQPJM.gif?format=mp4&s=158eb07411d840ee1b0990dcf0106048dc10b8c8)
+
+
 More writing to come...
 Good deeds javascript rails app!
 
