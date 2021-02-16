@@ -6,6 +6,9 @@ permalink:  ruby_iterators
 ---
 
 
+![](https://jellygummies.tumblr.com/image/182033912973)
+
+
 ## Reviewing iterators and return values with examples with the help of Relp.it
 
 ```
