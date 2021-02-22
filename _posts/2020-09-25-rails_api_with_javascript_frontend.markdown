@@ -6,7 +6,7 @@ permalink:  rails_api_with_javascript_frontend
 ---
 
 
-![](https://external-preview.redd.it/xLhDR-P8P1WnjfTxaIZJxXNJq5xOlcZwmcwvb3QQPJM.gif?format=mp4&s=158eb07411d840ee1b0990dcf0106048dc10b8c8)
+![](https://images6.fanpop.com/image/photos/41400000/Playful-Kitry-kittens-41499027-361-640.jpg))
 
 
 More writing to come...
