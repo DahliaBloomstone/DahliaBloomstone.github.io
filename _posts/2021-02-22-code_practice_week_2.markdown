@@ -170,3 +170,5 @@ Then I styled it up with CSS.
 ![](https://user-images.githubusercontent.com/63209579/108763951-fc2a5200-751f-11eb-8f15-70e14fcfd8b3.png)
 
 Play the game here: https://github.com/DahliaBloomstone/snake-game
+
+And for a more in depth tutorial watch: https://www.youtube.com/watch?v=-oOgsGP3t5o&t=2s
