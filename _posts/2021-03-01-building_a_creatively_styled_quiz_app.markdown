@@ -38,6 +38,7 @@ I then created my own gifs to add to the quiz!
 It looks like this: 
 ![](https://media.giphy.com/media/3HZ2OCqf1lLu7e21Gn/giphy.gif)
 
+For a more in depth tutorial watch: https://www.youtube.com/watch?v=riDzcEQbX6k&list=WL&index=27
 
 
 
