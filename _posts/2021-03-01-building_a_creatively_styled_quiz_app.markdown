@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Building a Creatively Styled Quiz App"
-date:       2021-03-01 17:34:40 +0000
+date:       2021-03-01 12:34:40 -0500
 permalink:  building_a_creatively_styled_quiz_app
 ---
 
@@ -30,6 +30,13 @@ div::after {
 ```
 
 Using --hue-neutral, --hue-wrong, and --hue-correct and The hue-rotate() CSS function rotates the hue of an element and its contents. Its result is a <filter-function>.
+
+I also used the HSL Calculator: https://www.w3schools.com/colors/colors_hsl.asp
+
+I then created my own gifs to add to the quiz! 
+
+It looks like this: 
+![](https://media.giphy.com/media/3HZ2OCqf1lLu7e21Gn/giphy.gif)
 
 
 
