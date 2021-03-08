@@ -10,6 +10,8 @@ permalink:  nfts_the_new_way_to_be_a_digital_artist
 
 This is something new for digital artists. 
 
+CryptoArt: Art registered on the blockchain. I.e. Media is associated with an NFT. https://www.artnome.com/news/2018/1/14/what-is-cryptoart
+
 I am reading this guide to eco-friendly NFTs: https://github.com/DahliaBloomstone/eco-nft
 
 > The CryptoArt NFT Market (i.e. selling digital art on the blockchain) is worth at least $150M - and this excludes some of the largest marketplaces like opensea.io, (and this figure is quite heavily skewed of course, with the top artists earning the most [1]).
@@ -18,6 +20,32 @@ I am reading this guide to eco-friendly NFTs: https://github.com/DahliaBloomston
 
 I am very interested in learning more about blockchain, NFTs, how this will hurt the environment, and how this will change the art world. 
 
-Today, I'll choose a code challenge that is art oriented, with potentially selling an NFT in mind. 
+Anyway, I just wanted to mention that, and build a javascript game with some cool design. 
+
+Using: 
+  • querySelector()
+  • addEventListener()
+  • Array.from()
+  • getElementsByClassName()
+  • Math.floor()
+  • Math.random()
+  • forEach()
+  • classList.contains()
+  • classList.add()
+  • classList.remove()
+  • setInterval()
+  • clearInterval()
+  • some()
+  • style.backgroundImage
+  • splice()
+  • concat()
+  • appendChild()
+  • Arrow functions
+	
+	After practicing the code, it has been fun to create gifs of my digital artwork and put them into whatever I just practiced for styling. It completes the challenge! 
+	
+![](https://media.giphy.com/media/jrW4aXVvDHQJSLnoK2/giphy.gif)
+
+
 
 
