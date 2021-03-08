@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "NFT's. The new way to be a digital artist."
-date:       2021-03-08 20:15:07 +0000
+date:       2021-03-08 15:15:08 -0500
 permalink:  nfts_the_new_way_to_be_a_digital_artist
 ---
 
