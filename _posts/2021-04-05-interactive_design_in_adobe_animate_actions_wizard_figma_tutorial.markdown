@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Interactive Design in Adobe Animate | Actions Wizard | Figma Tutorial "
-date:       2021-04-05 18:31:49 +0000
+date:       2021-04-05 14:31:50 -0400
 permalink:  interactive_design_in_adobe_animate_actions_wizard_figma_tutorial
 ---
 
