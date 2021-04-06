@@ -212,6 +212,8 @@ Better Font Picker helps you select fonts with a preview of how it looks.
 
 [Repo](https://github.com/nitinrgupta/figma-better-font-picker) | [Plugin on Figma](https://www.figma.com/c/plugin/739922281164562258/Better-Font-Picker)
 
+Now for the interactive design! 
+
 
 
 
