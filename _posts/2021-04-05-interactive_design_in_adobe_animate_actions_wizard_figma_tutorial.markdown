@@ -214,7 +214,8 @@ Better Font Picker helps you select fonts with a preview of how it looks.
 
 Now for the interactive design! 
 
+You add code using wizard in adobe animate. 
 
-
+You click on the instance, or action command, and choose the object to apply the action to. You open the project in the web browser in html to test.  
 
 
