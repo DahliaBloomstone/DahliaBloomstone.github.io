@@ -26,7 +26,26 @@ Trying to figure that out!
 npm i styled-components should work...and it worked! Finally. There were a bunch of module errors throughout this that were fixed by installing both framer motion and the above.  
 
 
+Framer Motion is an open source, production-ready library that's designed for all creative developers.
 
+It looks like this:
+
+<motion.div animate={{ x: 0 }} />
+It does all this:
+
+Spring animations
+Simple keyframes syntax
+Gestures (drag/tap/hover)
+Layout and shared layout animations
+SVG paths
+Exit animations
+Server-side rendering
+Variants for orchestrating animations across components
+CSS variables
+...and a whole lot more.
+
+This is a very helpful tutorial: https://www.youtube.com/watch?v=fuaVNHW-GYE
+:)
 
 
 
