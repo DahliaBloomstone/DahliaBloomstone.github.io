@@ -6,6 +6,9 @@ permalink:  how_to_make_a_react_website_with_animations_using_framer_motion
 ---
 
 
+https://user-images.githubusercontent.com/63209579/115314548-65ef6280-a143-11eb-83c6-2033ebecde5f.mov
+
+
 
 Getting Started with Create React App.
 
