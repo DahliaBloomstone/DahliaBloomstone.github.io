@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Figma Design + React + Responsive Site | UI/UX"
-date:       2021-04-27 00:40:37 +0000
+date:       2021-04-26 20:40:37 -0400
 permalink:  figma_design_react_responsive_site_ui_ux
 ---
 
@@ -17,3 +17,5 @@ Figma inspect is a great feature by Figma by which you can convert your design e
 A design system is a living style guide that’s collaborative and code-connected. It’s not just a style guide where designers are the only contributors. It’s shared across the whole team, including designers, developers, product managers, etc. As a result, the design system should be cohesive, dynamic, reusable and maintainable both in design and code.
 
 https://github.com/DahliaBloomstone/design-2-code
+
+https://www.w3schools.com/graphics/svg_examples.asp I'm also thinking about How To Animate SVG With CSS. 
