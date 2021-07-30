@@ -1,6 +1,6 @@
 ---
 layout: post
-title:      "Let's write about rails! "
+title:      "rails stuff "
 date:       2020-09-23 13:16:33 -0400
 permalink:  helpful_rails_notes
 ---
